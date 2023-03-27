@@ -8,41 +8,37 @@
 
 <body>
 	<form method="post">
-		<div>
+	
 			<label for="name">Name*</label>
-			<input id="name" type="text" required>
-		</div>
-		<div>
+			<input id="name" type="text" name="name" required>
+		
 			<label for="email">Email*</label>
-			<input id="email" type="email" required>
-		</div>
-		<div>
-			<label>Gender*</label>
-			<label for="male">Male</label>
-			<input type="radio" id="male" required name="gender">
-			<label for="female">Female</label>
-			<input type="radio" id="female" required name="gender">
-		</div>
-		<div>
-			<label for="cars">Car Brands</label>
-			<select id="cars">
-				<option>BMW</option>
-				<option>Audi</option>
-				<option>Mercedez</option>
-			</select>
-		</div>
-		<div>
+				<input id="email" type="email" name="email" required>
+	
+			<label for="gender">Gender*</label><br>
+		<input type="radio" id="male" required value="male" name="gender">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" required value="female" name="gender">
+			<label for="female">Female</label><br>
+			
+		
+			<label for="laptop">Laptop Brand</label>
+			<select id="laptop"name="laptop">
+				<option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="HP">HP</option>
+		
 			<label for="age">Age*</label>
-			<input type="number" required id="age">
-		</div>
-		<div>
+			<input type="number" name="age"required id="age">
+		
 			<label for="dob">DOB*</label>
-			<input type="date" id="dob" required>
-		</div>
-		<div>
+			<input type="date" name="dob"id="dob" required>
+		
 			<label for="password">Password*</label>
-			<input type="password" id="password" required>
-		</div>
+			<input type="password" id="password" name="password" required>
+
+				<label for="portfolio">Portfolio URL</label>
+				<input type="url" id="portfolio" name="portfolio">
 		<button type="submit">submit button</button>
 	</form>
 	<!-- the entire body must be written by student -->
